@@ -1,11 +1,39 @@
 $cd-btn: #011c37;
 $cd-txt: #15DEA5;
+$cd-btn-light:#054280;
+$cd-txt-dark: #046348;
 
+body
+{
+    max-width: 1440px;
+
+    margin: auto;
+}
 .btn 
 {
     background: $cd-btn;
     color: $cd-txt;
     font-size: 3rem;
+    text-align: center;
+
     cursor: pointer;
+
+    width: 15em;
+
+    margin-top: 2em;
     padding: 1.85rem 3rem;
-}
+    border-radius: 10rem;
+
+    transform: scale(1);
+    transition-duration: 0.4s;
+    transition-property: transform;
+    //transition: transform 0.4s;
+
+        &:hover 
+        {
+            transform: scale(1.15);
+            box-shadow: 0 0 0.1em gray;
+            background: $cd-btn-light;
+            color: $cd-txt-dark;
+        }
+    }

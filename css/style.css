@@ -1,9 +1,27 @@
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
 .btn {
   background: #011c37;
   color: #15DEA5;
   font-size: 3rem;
+  text-align: center;
   cursor: pointer;
+  width: 15em;
+  margin-top: 2em;
   padding: 1.85rem 3rem;
+  border-radius: 10rem;
+  transform: scale(1);
+  transition-duration: 0.4s;
+  transition-property: transform;
+}
+.btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 0.1em gray;
+  background: #054280;
+  color: #046348;
 }
 
 /*# sourceMappingURL=style.css.map */
